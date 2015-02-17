@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="TaxonomyPicker.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="GoogleProductTaxonomyPicker.js" />
