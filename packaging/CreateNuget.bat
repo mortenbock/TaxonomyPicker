@@ -1,0 +1,2 @@
+if not exist NuGetRelease mkdir NuGetRelease
+..\tools\NuGet\NuGet.exe pack ..\src\TaxonomyPicker\TaxonomyPicker.csproj -Build -Properties Configuration=Release -OutputDirectory NuGetRelease -Verbosity detailed

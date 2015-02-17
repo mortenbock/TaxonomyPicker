@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/mortenbock/TaxonomyPicker/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/mortenbock/TaxonomyPicker</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright © 2015</copyright>
+    <tags>Umbraco</tags>
+    <dependencies>
+        <dependency id="UmbracoCms.Core" version="[4.8.0,7)" />
+    </dependencies>
+  </metadata>
+</package>

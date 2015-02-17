@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TaxonomyPicker")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("TaxonomyPicker for Umbraco")]
+[assembly: AssemblyDescription("Google product taxonomy category picker property editor for umbraco v4 and v6.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Morten Bock")]
 [assembly: AssemblyProduct("TaxonomyPicker")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyCopyright("Copyright © 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
