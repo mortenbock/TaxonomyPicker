@@ -1,0 +1,45 @@
+﻿.gptp-spacebottom {
+    margin-bottom: 10px;
+}
+
+.gptp-selectBtn {
+    margin-left: 5px;
+}
+
+.gptp-selector-area {
+    display: none;
+}
+
+.gptp-ddlcontainer {
+    overflow: hidden;
+}
+
+    .gptp-ddlcontainer select {
+        display: block;
+        float: left;
+        clear: left;
+        margin-bottom: 3px;
+    }
+
+.gptp-searchresults {
+    width: 80%;
+    min-width: 400px;
+    background: #fff;
+    position: absolute;
+    z-index: 9999;
+    border: 1px solid #c0c0c0;
+    border-radius: 3px;
+    display: none;
+}
+
+.gptp-searchresults .gptp-resultItem {
+        border-bottom: 1px solid #c0c0c0;
+        padding: 9px;
+        clear: both;
+        overflow: hidden;
+    }
+
+        .gptp-searchresults .gptp-resultItem button {
+            float: right;
+            margin-left: 10px;
+        }
