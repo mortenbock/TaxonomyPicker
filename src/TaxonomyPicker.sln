@@ -7,8 +7,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxonomyPicker", "TaxonomyP
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Packaging", "Packaging", "{2F0F9C69-C3F9-44CF-B960-291379EBE4A3}"
 	ProjectSection(SolutionItems) = preProject
-		..\packaging\CreateNuget.bat = ..\packaging\CreateNuget.bat
 		..\packaging\ReleaseChecklist.txt = ..\packaging\ReleaseChecklist.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{04E29F4F-D227-4A9A-9D49-29F6A397D5D8}"
+	ProjectSection(SolutionItems) = preProject
+		..\packaging\CreateNuget.bat = ..\packaging\CreateNuget.bat
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Umbraco", "Umbraco", "{BCECCD67-1A41-4084-80E3-8408AAC3D6A9}"
+	ProjectSection(SolutionItems) = preProject
+		..\packaging\CreateUmbracoPackage.ps1 = ..\packaging\CreateUmbracoPackage.ps1
+		..\packaging\package.xml = ..\packaging\package.xml
 	EndProjectSection
 EndProject
 Global
@@ -24,5 +34,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{04E29F4F-D227-4A9A-9D49-29F6A397D5D8} = {2F0F9C69-C3F9-44CF-B960-291379EBE4A3}
+		{BCECCD67-1A41-4084-80E3-8408AAC3D6A9} = {2F0F9C69-C3F9-44CF-B960-291379EBE4A3}
 	EndGlobalSection
 EndGlobal
