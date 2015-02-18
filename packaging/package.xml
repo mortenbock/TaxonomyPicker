@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <info>
+    <package>
+      <name>TaxonomyPicker</name>
+      <version>1.0.0.0</version>
+      <license url="https://github.com/mortenbock/TaxonomyPicker/blob/master/LICENSE">MIT License</license>
+      <url>https://github.com/mortenbock/TaxonomyPicker</url>
+      <requirements>
+        <major>4</major>
+        <minor>8</minor>
+        <patch>0</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Morten Bock</name>
+      <website>http://www.mortenbock.dk/</website>
+    </author>
+    <readme><![CDATA[Datatype for picking Google Product Taxonomy Categories]]></readme>
+  </info>
+  <files>
+    <file>
+      <guid>TaxonomyPicker.dll</guid>
+      <orgPath>/bin</orgPath>
+      <orgName>TaxonomyPicker.dll</orgName>
+    </file>
+  </files>
+  <DocumentTypes />
+  <Templates />
+  <Stylesheets />
+  <Macros />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes />
+</umbPackage>
