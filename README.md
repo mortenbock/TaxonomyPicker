@@ -1,6 +1,10 @@
 # TaxonomyPicker
 A datatype for Umbraco for selecting Google Product Taxonomy Categories
 
+NuGet: [https://www.nuget.org/packages/TaxonomyPicker](https://www.nuget.org/packages/TaxonomyPicker)
+
+Umbraco Package: [https://our.umbraco.org/projects/backoffice-extensions/taxonomypicker](https://our.umbraco.org/projects/backoffice-extensions/taxonomypicker)
+
 ## Usage
 The datatype lets you pick the appropriate category either by using the drill down select boxes, or be searching for a keyword.
 
