@@ -21,6 +21,9 @@
         margin-bottom: 3px;
     }
 
+.gptp-search {
+    position: relative;
+}
 .gptp-searchresults {
     width: 80%;
     min-width: 400px;

@@ -112,7 +112,7 @@ namespace TaxonomyPicker
 					writer.WriteEncodedText("Search");
 					writer.RenderEndTag();
 					{
-
+						writer.AddAttribute(HtmlTextWriterAttribute.Class, "gptp-search");
 						writer.RenderBeginTag(HtmlTextWriterTag.Div);
 						{
 							writer.AddAttribute(HtmlTextWriterAttribute.Class, "gptp-searchTxt umbEditorTextField");
