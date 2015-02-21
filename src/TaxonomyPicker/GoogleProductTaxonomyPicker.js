@@ -119,7 +119,7 @@
 				var lines = data.split("\n");
 
 				for (var i = 0; i < lines.length; i++) {
-					var line = lines[i];
+					var line = lines[i].trim();
 					if (line.indexOf("#") == 0) continue;
 
 					searchable.push(line);
