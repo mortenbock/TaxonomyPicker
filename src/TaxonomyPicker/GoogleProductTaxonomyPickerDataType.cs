@@ -1,5 +1,6 @@
 ﻿using System;
 using umbraco.cms.businesslogic.datatype;
+using umbraco.editorControls.SettingControls;
 
 namespace TaxonomyPicker
 {
@@ -7,6 +8,8 @@ namespace TaxonomyPicker
     {
 		[DataEditorSetting("Taxonomy File Url")]
 		public string TaxonomyFileUrl { get; set; }
+		[DataEditorSetting("Publish Numeric Ids", type = typeof(CheckBox))]
+		public string PublishNumericIds { get; set; }
 
 		private readonly GoogleProductTaxonomyPickerDataEditor m_Editor = new GoogleProductTaxonomyPickerDataEditor();
 
@@ -35,6 +38,7 @@ namespace TaxonomyPicker
 		void m_Editor_Init(object sender, EventArgs e)
 		{
 			m_Editor.TaxonomyFileUrl = TaxonomyFileUrl;
+		    m_Editor.PublishNumericIds = PublishNumericIds == true.ToString();
 			var value = Data.Value;
 			m_Editor.Text = value != null ? value.ToString() : string.Empty;
 		}

@@ -184,3 +184,4 @@ FakesAssemblies/
 
 # Packaging folder outputs
 **/packaging/Release/*
+src/.vs/config/applicationhost.config

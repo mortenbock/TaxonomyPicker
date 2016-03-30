@@ -10,13 +10,16 @@ using umbraco.editorControls;
 [assembly: WebResource("TaxonomyPicker.GoogleProductTaxonomyPicker.js", "application/x-javascript")]
 [assembly: WebResource("TaxonomyPicker.GoogleProductTaxonomyPicker.css", "text/css")]
 [assembly: WebResource(GoogleProductTaxonomyPickerDataEditor.taxfileresource, "text/plain")]
+[assembly: WebResource(GoogleProductTaxonomyPickerDataEditor.taxfilewithidsresource, "text/plain")]
 
 namespace TaxonomyPicker
 {
 	public class GoogleProductTaxonomyPickerDataEditor : Panel
 	{
 		public const string taxfileresource = "TaxonomyPicker.taxonomy.txt";
+		public const string taxfilewithidsresource = "TaxonomyPicker.taxonomy-with-ids.txt";
 		public string TaxonomyFileUrl { get; set; }
+		public bool PublishNumericIds { get; set; }
 
 		protected TextBox TextBoxControl { get; set; }
 
@@ -143,14 +146,17 @@ namespace TaxonomyPicker
 			{
 				var clientScriptManager = Page.ClientScript;
 				var type = typeof(GoogleProductTaxonomyPickerDataEditor);
-				taxFileUrl = clientScriptManager.GetWebResourceUrl(type, taxfileresource);
+			    taxFileUrl = PublishNumericIds
+			        ? clientScriptManager.GetWebResourceUrl(type, taxfilewithidsresource)
+			        : clientScriptManager.GetWebResourceUrl(type, taxfileresource);
 			}
 			else
 			{
 				taxFileUrl = TaxonomyFileUrl;
 			}
 
-			var javascriptMethod = string.Format("jQuery('#{0} .gptp-selectBtn').click(function(){{jQuery('#{0}').GoogleProductTaxonomyPicker('{1}');}});", ClientID, HttpUtility.JavaScriptStringEncode(taxFileUrl));
+		    var javascriptMethod =
+		        string.Format("jQuery('#{0} .gptp-selectBtn').click(function(){{jQuery('#{0}').GoogleProductTaxonomyPicker('{1}', {2});}});", ClientID, HttpUtility.JavaScriptStringEncode(taxFileUrl), PublishNumericIds ? "true" : "false");
 			var javascript = string.Concat("<script type='text/javascript'>jQuery(window).load(function(){", javascriptMethod, "});</script>");
 			writer.WriteLine(javascript);
 		}
