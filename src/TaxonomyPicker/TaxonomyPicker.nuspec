@@ -10,8 +10,8 @@
     <projectUrl>https://github.com/mortenbock/TaxonomyPicker</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Fixes layout problem in uCommerce, and handles taxonomy files with cr lf linebreaks</releaseNotes>
-    <copyright>Copyright © 2015</copyright>
+    <releaseNotes>Update to handle numeric taxonomy files</releaseNotes>
+    <copyright>Copyright © 2016</copyright>
     <tags>Umbraco</tags>
     <dependencies>
         <dependency id="UmbracoCms.Core" version="[4.8.0,7)" />
